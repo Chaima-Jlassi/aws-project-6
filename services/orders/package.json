@@ -1,0 +1,12 @@
+{
+  "name": "orders-service",
+  "version": "1.0.0",
+  "description": "Orders microservice: creates and lists orders, verifies callers via the auth service",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
