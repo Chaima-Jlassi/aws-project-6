@@ -39,9 +39,3 @@ The diagram is generated from code (`docs/architecture.py`), so it stays in sync
 | notifications | `POST /notify`, `GET /notifications`, `GET /health` | Records notifications, logs to stdout (CloudWatch) |
 
 
-- [ ] Phase 5: CI with GitHub Actions, CD with CodePipeline + CodeDeploy blue/green
-- [ ] Phase 6: CloudWatch dashboards and alarms, X-Ray, architecture diagram, demo video
-
-## Cost note
-
-Fargate, NAT Gateway, ALB and ElastiCache bill hourly. Deploy, record the demo, then run `terraform destroy`.
