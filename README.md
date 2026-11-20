@@ -47,29 +47,8 @@ Requires Docker.
 docker compose up --build
 ```
 
-Try it:
 
-```bash
-# 1. Log in (demo user alice / password123)
-TOKEN=$(curl -s -X POST localhost:3001/auth/login \
-  -H 'Content-Type: application/json' \
-  -d '{"username":"alice","password":"password123"}' | sed 's/.*"token":"\([^"]*\)".*/\1/')
 
-# 2. Create an order
-curl -s -X POST localhost:3002/orders \
-  -H "Authorization: Bearer $TOKEN" -H 'Content-Type: application/json' \
-  -d '{"item":"keyboard","quantity":2}'
-
-# 3. See the notification the order triggered
-curl -s localhost:3003/notifications
-```
-
-## Roadmap
-
-- [x] Phase 1: microservices, Dockerfiles, local docker-compose
-- [ ] Phase 2: Terraform networking (VPC, subnets, NAT, security groups)
-- [ ] Phase 3: ECR, ECS cluster, task definitions, services, ALB path routing
-- [ ] Phase 4: Cloud Map, Secrets Manager, ElastiCache
 - [ ] Phase 5: CI with GitHub Actions, CD with CodePipeline + CodeDeploy blue/green
 - [ ] Phase 6: CloudWatch dashboards and alarms, X-Ray, architecture diagram, demo video
 
