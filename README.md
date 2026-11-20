@@ -2,7 +2,6 @@
 
 A Node.js application split into three microservices (**Auth**, **Orders**, **Notifications**) running on Amazon ECS Fargate, with service discovery, secret injection, shared session caching and a blue/green CI/CD pipeline.
 
-> Status: Phase 1 complete (services and local stack). AWS infrastructure is next.
 
 ## Architecture
 
