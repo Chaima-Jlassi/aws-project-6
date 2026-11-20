@@ -39,15 +39,6 @@ The diagram is generated from code (`docs/architecture.py`), so it stays in sync
 | orders | `POST /orders`, `GET /orders`, `GET /health` | Verifies the caller through auth, triggers notifications |
 | notifications | `POST /notify`, `GET /notifications`, `GET /health` | Records notifications, logs to stdout (CloudWatch) |
 
-## Run locally
-
-Requires Docker.
-
-```bash
-docker compose up --build
-```
-
-
 
 - [ ] Phase 5: CI with GitHub Actions, CD with CodePipeline + CodeDeploy blue/green
 - [ ] Phase 6: CloudWatch dashboards and alarms, X-Ray, architecture diagram, demo video
