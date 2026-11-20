@@ -7,7 +7,6 @@ A Node.js application split into three microservices (**Auth**, **Orders**, **No
 
 ![Solution architecture](docs/architecture.png)
 
-The diagram is generated from code (`docs/architecture.py`), so it stays in sync with the design. Regenerate it with `pip install diagrams && python3 docs/architecture.py` (needs Graphviz).
 
 **How a request flows**
 
